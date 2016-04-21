@@ -1,0 +1,20 @@
+/*
+Theme Name: Meris Child
+Theme URI: http://www.meris.com/meris-theme.html
+Description: Child theme for the Meris.
+Template: meris
+Version: 1.0.0
+Author: MageeWP
+Author URI: http://www.mageewp.com
+Tags: one-column, two-columns, three-columns, yellow, green, dark,light,gray, responsive-layout, custom-background, custom-header, custom-menu, theme-options, left-sidebar, right-sidebar, translation-ready, editor-style, featured-images, full-width-template
+Text Domain: meris-child
+*/
+
+@import url("../meris/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+header{ background:gray;}
+
+
+

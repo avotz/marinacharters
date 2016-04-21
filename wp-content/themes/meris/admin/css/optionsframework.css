@@ -1,0 +1,573 @@
+/* Options Framework Admin Styles */
+
+#optionsframework {
+    max-width:840px;
+    background:#fff;
+}
+#optionsframework h3 {
+	cursor: default;
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #ddd;
+}
+#optionsframework p {
+	margin-bottom:0;
+	padding-bottom:10px;
+}
+#optionsframework .section,
+#optionsframework .section2{
+	padding:10px 10px 0;
+}
+#optionsframework .group {
+	padding-bottom:40px;
+}
+#optionsframework .section .controls,
+#optionsframework .section2 .controls{
+	float: left;
+	min-width:350px;
+	width: 54%;
+	padding-right:2%;
+}
+#optionsframework .section .explain ,
+#optionsframework .section2 .explain{
+	max-width:38%;
+	float: left;
+	font-size: 12px;
+	line-height:16px;
+	color: #777;
+}
+#optionsframework .section-checkbox .controls {
+	width: 98%;
+}
+#optionsframework .section-checkbox .explain {
+	max-width:94%;
+}
+#optionsframework .controls input[type=text] {
+	width:100%;
+}
+#optionsframework .controls input[type=text].wp-color-picker {
+    width: 65px;
+}
+#optionsframework .controls select, #optionsframework .controls textarea {
+	margin-bottom:10px;
+	width:100%;
+}
+#optionsframework .section-radio label, #optionsframework .section-multicheck label {
+	float:left;
+	max-width:90%;
+	line-height: 16px;
+	margin-bottom: 5px;
+}
+#optionsframework input.checkbox, #optionsframework input.of-radio {
+	margin: 0 10px 5px 0;
+	float:left;
+	clear:both;
+}
+#optionsframework .section-typography .controls {
+	float:none;
+	width:auto;
+}
+#optionsframework .section-typography .explain {
+	float:none;
+	width:auto;
+}
+#optionsframework .controls .of-typography-size {
+	width:80px;
+	float:left
+}
+#optionsframework .controls .of-typography-unit {
+	width:50px;
+	margin-left:5px;
+	float:left
+}
+#optionsframework .controls .of-typography-face {
+	width:100px;
+	margin-left:5px;
+	float:left
+}
+#optionsframework .controls .of-typography-style {
+	width:80px;
+	margin-left:5px;
+	margin-right:5px;
+	float:left
+}
+#optionsframework .section-typography .wp-picker-container {
+	margin-top:2px;
+}
+#optionsframework .of-background-properties {
+	clear:both;
+	margin-top: 18px;
+}
+#optionsframework .controls .of-background-repeat {
+	width:125px;
+	margin-right:5px;
+	float:left
+}
+#optionsframework .controls .of-background-position {
+	width:125px;
+	margin-right:5px;
+	float:left
+}
+#optionsframework .controls .of-background-attachment {
+	width:125px;
+	margin-right:5px;
+	float:left
+}
+#optionsframework .section-background .wp-picker-container {
+	margin-bottom:10px;
+}
+#optionsframework .controls .of-radio-img-img {
+	border:3px solid #f9f9f9;
+	margin:0 5px 10px 0;
+	display:none;
+	cursor:pointer;
+	float:left;
+}
+#optionsframework .controls .of-radio-img-selected {
+	border:3px solid #ccc
+}
+#optionsframework .controls .of-radio-img-img:hover {
+	opacity:.8;
+}
+#optionsframework .controls .of-border-width {
+	width:80px;
+	float:left
+}
+#optionsframework .controls .of-border-style {
+	width:120px;
+	float:left
+}
+#optionsframework .hide {
+	display:none;
+}
+#optionsframework .of-option-image {
+	max-width:340px;
+	margin:3px 0 18px 0;
+}
+#optionsframework .mini .controls select, #optionsframework .section .mini .controls {
+	width: 140px;
+}
+#optionsframework .mini .controls input, #optionsframework .mini .controls {
+	min-width:140px;
+	width: 140px;
+}
+#optionsframework .mini .explain {
+	max-width:74%;
+}
+
+/* Editor */
+
+#optionsframework .section-editor .explain {
+	max-width: 98%;
+	float:none;
+	margin-bottom:5px;
+}
+
+/* Image Uploader */
+
+#optionsframework .controls input.upload {
+	width:80%;
+}
+#optionsframework .screenshot {
+	float:left;
+	margin-left:1px;
+	position:relative;
+	width:344px;
+	margin-top:3px;
+}
+#optionsframework .screenshot img {
+	background:#fafafa;
+	border-color:#ccc #eee #eee #ccc;
+	border-style:solid;
+	border-width:1px;
+	float:left;
+	max-width:334px;
+	padding:4px;
+	margin-bottom:10px;
+}
+#optionsframework .screenshot .remove-image {
+	background:url("../images/ico-delete.png") no-repeat;
+	border:medium none;
+	bottom:4px;
+	display:block;
+	float:left;
+	height:16px;
+	padding:0;
+	position:absolute;
+	left:-4px;
+	text-indent:-9999px;
+	width:16px;
+}
+#optionsframework .screenshot .no_image .file_link {
+	margin-left: 20px;
+}
+#optionsframework .screenshot .no_image .remove-button {
+	bottom: 0px;
+}
+#optionsframework .reset-button {
+	float:left;
+	cursor:pointer;
+}
+
+/* Bottom Section */
+
+#optionsframework-submit {
+	padding: 7px 10px;
+	border-top: 1px solid #ddd;
+	background-color: #f1f1f1;
+}
+#optionsframework .button-primary {
+	float:right;
+}
+#optionsframework .section:after ,
+#optionsframework .section2:after{
+	content: "";
+	display: table;
+}
+#optionsframework .section:after ,
+#optionsframework .section2:after
+{
+	clear: both;
+}
+
+/* Additional*/
+#optionsframework .section .option .controls input[type=text]{ 
+  width:350px;
+  }
+#optionsframework .section-start_group.group_close > div{ 
+  display:none;
+  }
+#optionsframework .section-start_group .wp-picker-container{ 
+   width:100%;
+   }
+#optionsframework #logo-image img {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    display: block;
+    float: left;
+    height: auto;
+    max-width: 100%;
+    padding: 4px;
+}
+
+#optionsframework .section-start_group > h4.heading{
+	font-size:14px; 
+	color:#FFFFFF; 
+	font-weight:bold; 
+	overflow: hidden; 
+	line-height: 30px; 
+	margin: 0;
+	overflow: hidden;
+	padding-left: 10px; 
+	cursor:pointer;
+	}
+#optionsframework  .group_open > h4.heading{
+	background:url(../images/arrow-open.png) right 10px center no-repeat #999;
+	}
+#optionsframework  .group_close > h4.heading{
+	background:url(../images/arrow.png) right 10px center no-repeat #999;
+	}
+#optionsframework .section-start_group .section .controls{ 
+    width:90%;
+	}
+
+#optionsframework .controls #list-item input,
+#optionsframework .controls #list-item select{
+
+	margin-right: 20px;
+	}
+#optionsframework #section-widget #widget_layout,
+#optionsframework #section-widget #list-item-val{
+    width:auto !important;
+	margin-right: 20px;
+	}
+	
+	#optionsframework-wrap {
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 3px solid #ccc;
+}
+
+#optionsframework .group_close > h4.heading {
+	border-radius: 3px;
+}
+#optionsframework-wrap #optionsframework-sidebar {
+    float: left;
+    margin-left: 20px;
+    width: 250px;
+}
+#optionsframework{
+	float:left;
+	width:820px;
+	}
+#optionsframework-wrap {
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 3px solid #ccc;
+}
+
+#optionsframework .group_close > h4.heading {
+	border-radius: 3px;
+}
+
+.postbox .inside a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+	padding: 15px 10px;
+	display: block;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.postbox .inside a:hover {
+	color: #fff;
+}
+
+.postbox .inside li:nth-child(1) a {
+	background-color: #98B6CB;
+}
+
+.postbox .inside li:nth-child(2) a {
+	background-color: #EF5D36;
+}
+
+.postbox .inside li:nth-child(3) a {
+	background-color: #fed136;
+}
+
+.postbox .inside li:nth-child(4) a {
+	background-color: #F797AE;
+}
+
+.postbox .inside li:nth-child(5) a {
+	background-color: #906E9B;
+}
+
+.section-widget-area-name{
+	height:30px;
+	background:#999;
+	color:#fff;
+	line-height:30px;
+	padding:0 10px;
+	}
+	
+.section-widget-area-name span
+{
+	float:right;
+	cursor:pointer;
+	}
+.section-widget-area-wrapper{
+	display:none;
+	}
+
+
+.section-widget-area-name  .widget-area-name{ 
+    display:block; width:75%;
+	float:left;
+	cursor:move;
+	}
+#list-widget-areas {
+	margin: 15px 0 0 0;
+	border: none;
+}
+
+.list-item {
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	background: #e4e4e4;
+	border-radius: 4px;
+}
+
+.remove-section,
+.edit-section {
+	text-decoration: none;
+}
+
+.section-widget-area-name {
+	background: transparent;
+	color: #444;
+}
+
+.list-item .wp-picker-container,
+.list-item .wp-picker-container:active {
+	margin-bottom: 5px;
+}
+.list-item .wp-picker-container{ 
+    width:100%;
+   }
+.list-item .section label{ 
+    margin-bottom:10px;
+	display: block;
+	}
+	{
+    background-position: -72px -96px;
+}
+.icon-white, .nav-pills > .active > a > [class^="icon-"], .nav-pills > .active > a > [class*=" icon-"], .nav-list > .active > a > [class^="icon-"], .nav-list > .active > a > [class*=" icon-"], .navbar-inverse .nav > .active > a > [class^="icon-"], .navbar-inverse .nav > .active > a > [class*=" icon-"], .dropdown-menu > li > a:hover > [class^="icon-"], .dropdown-menu > li > a:focus > [class^="icon-"], .dropdown-menu > li > a:hover > [class*=" icon-"], .dropdown-menu > li > a:focus > [class*=" icon-"], .dropdown-menu > .active > a > [class^="icon-"], .dropdown-menu > .active > a > [class*=" icon-"], .dropdown-submenu:hover > a > [class^="icon-"], .dropdown-submenu:focus > a > [class^="icon-"], .dropdown-submenu:hover > a > [class*=" icon-"], .dropdown-submenu:focus > a > [class*=" icon-"] {
+    background-image: url("../images/glyphicons-halflings-white.png");
+}
+[class^="icon-"], [class*=" icon-"] {
+    background-image: url("../images/glyphicons-halflings.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 1px;
+    vertical-align: text-top;
+    width: 14px;
+}
+.icon-ok-sign {
+    background-position: -72px -96px;
+}
+.icon-remove-sign {
+    background-position: -48px -96px;
+}
+.btn {
+    border-radius: 0;
+    position: relative;
+}
+.btn-small {
+    border-radius: 3px;
+    font-size: 11.9px;
+    padding: 2px 10px;
+}
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #B3B3B3;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+
+.btn-group > .btn:first-child {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+    margin-left: 0;
+}
+.btn-group > .btn:last-child {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+    margin-left: 0;
+}
+
+.popover.top {
+    margin-top: -10px;
+}
+.fade.in {
+    opacity: 1;
+}
+.popover {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    max-width: 276px;
+    padding: 1px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    white-space: normal;
+    z-index: 1010;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.15s linear 0s;
+}
+   
+.popover.top .arrow:after {
+    border-bottom-width: 0;
+    border-top-color: #FFFFFF;
+    bottom: 1px;
+    margin-left: -10px;
+}
+
+.popover .arrow:after {
+    border-width: 10px;
+    content: "";
+}
+.popover .arrow, .popover .arrow:after {
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.popover.top .arrow {
+    border-bottom-width: 0;
+    border-top-color: #fff;
+    bottom: -11px;
+    left: 50%;
+    margin-left: -11px;
+}
+.popover .arrow {
+    border-width: 11px;
+}
+.popover .arrow, .popover .arrow:after {
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.popover-title {
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #EBEBEB;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    margin: 0;
+    padding: 8px 14px;
+}
+
+.popover-content {
+    padding: 9px 14px;
+}
+
+.btn-group {
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.btn-primary {
+    background-color: #006DCC;
+    background-image: linear-gradient(to bottom, #0088CC, #0044CC);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	text-decoration:none;
+}

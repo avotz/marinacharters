@@ -1,0 +1,67 @@
+/*
+ Theme Name:   MarinaCharters
+ Theme URI:    #
+ Description:  MarinaCharters Child Theme
+ Author:       Alonso
+ Author URI:   http://avotz.com
+ Template:     meris
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  MarinaCharters
+*/
+
+@import url("../meris/style.css");
+
+.home_widget_portfolio h3 {
+	color: white;
+}
+.homepage-slider .carousel-caption a {
+    border: none;
+    background-color: #0d79c8;
+    color: #fff;
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-weight: bold;
+    padding: 1px 6px;
+    line-height:50px;
+    display: inline-block; 
+}
+h1,
+h2,
+h3{
+	margin-top: 0;
+}
+.fleet h3, .activities h3{
+	color: #000;
+}
+.pagination{
+	text-align: center;
+}
+.pagination>h2{
+	display: none;
+}
+.pagination .page-numbers {
+    display: inline-block;
+    background-color: #0d79c8;
+    color: #fff;
+    padding: .8rem;
+    line-height: 18px;
+}
+.pagination .page-numbers.current, .pagination .page-numbers:hover {
+    background-color: #000;
+}
+.txt-center{
+	text-align: center;
+}
+.entry-title{
+	margin-top: 0;
+}
+footer .site-info
+{
+	color: white;
+}

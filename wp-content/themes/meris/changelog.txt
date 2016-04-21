@@ -1,0 +1,27 @@
+== CHANGE LOG == 
+
+= Version 1.1.2 =
+* Fixed translation issues
+
+= Version 1.1.1 =
+* Fixed sticky header issue
+* Fixed translation issues
+
+= Version 1.1.0 =
+* Fixed home page slider issue
+
+= Version 1.0.9 =
+* Fixed menu disapear when resize the window
+
+= Version 1.0.8 =
+* Added team widget
+* Add unlimited sections to the homepage
+* Drag & Drop Section Controller
+
+= Version 1.0.7 =
+* Added sticky header
+* Fixed responsive mode sub-menu issue.
+
+= Version 1.0.6 =
+* Added service widget icon color control.
+* Upgrade Font Awesome to version 4.1
