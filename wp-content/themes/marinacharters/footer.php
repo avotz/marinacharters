@@ -18,7 +18,7 @@
 					Marina Charters CR 2016 @ <a href="http://www.avotz.com">Avotz</a>
 				</div>
 			</div>
-		</footer>f
+		</footer>
 	</div>	
     <?php wp_footer();?>
 </body>
