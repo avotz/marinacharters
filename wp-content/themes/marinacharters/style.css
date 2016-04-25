@@ -67,6 +67,10 @@ h2,
 h3{
 	margin-top: 0;
 }
+.fleet-details{
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+}
 .fleet h3, .activities h3{
 	color: #000;
 }

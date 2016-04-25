@@ -79,7 +79,9 @@ get_header(); ?>
 									echo '</div>';
                                   ?>                             
 	                        </div>
+
 						</section>
+
 					</div>
                     <?php if($meris_sidebar == "left" || $meris_sidebar == "both"){?>
 					<div class="<?php echo $column_class_two;?>">
@@ -102,7 +104,98 @@ get_header(); ?>
 				</div>
 			</div>	
 		</div>
+		
 <?php endwhile;?>
+<?php $pageType = get_the_terms($post->id, 'type');	?>
 <?php endif;?>
+
+<?php if($pageType[0]->slug == 'fleet') : ?>
+<section class="fleet fleet-details">
+
+                              
+                              <div class="container">
+
+
+                                  
+                                  <?php 
+                                     
+                                     if ( get_query_var('paged') ) {
+                                                $paged = get_query_var('paged');
+                                            } else if ( get_query_var('page') ) {
+                                                $paged = get_query_var('page');
+                                            } else {
+                                                $paged = 1;
+                                            } 
+                              
+                                            $args = array(
+                                              'post_type' => 'page',
+                                              'paged' => $paged,
+                                              'posts_per_page' => 4,
+                                              'orderby' => 'rand',
+                                              'tax_query' => array(
+                                                array(
+                                                  'taxonomy' => 'type',
+                                                  'field' => 'slug',
+                                                  'terms' => 'fleet'
+                                                )
+                                              )
+                                              /*'post__in' => array(61,67,63,65),*/
+                                              
+                                            );
+                                            $temp = $wp_query; 
+                                            $wp_query = null;
+                                            $wp_query = new WP_Query( $args );
+
+                                            if( $wp_query->have_posts() ) : while( $wp_query->have_posts() ) : $wp_query->the_post();
+                                                
+                                              
+
+                                                ?>
+                                            
+                                                      <div class="col-md-3" >
+                                                          <div class="widget home_widget_portfolio">
+                                                              <div class="col-sm-6 col-md-12">
+                                                                  <div class="portfolio-box text-center">
+                                                                     
+                                                                        <?php if ( has_post_thumbnail() ) :
+
+                                                                        $id = get_post_thumbnail_id($post->ID);
+                                                                        $thumb_url = wp_get_attachment_image_src($id,'medium', true);
+                                                                        ?>
+                                                                         <a href="<?php the_permalink(); ?>">
+                                                                            <img src="<?php echo $thumb_url[0] ?>" alt="img">
+                                                                        </a>           
+                                                                    <?php endif; ?>
+                                                                    <a href="<?php the_permalink(); ?>">
+                                                                           <h3><?php the_title(); ?></h3>
+                                                                    </a>           
+                                                                  </div>
+                                                                
+                                                              </div>
+                                                              
+                                                          </div>
+                                                          
+                                                      </div>
+                                             
+                              
+                                                    <?php endwhile; ?>
+                                              <!-- post navigation -->
+                                            
+                                          <?php endif; ?>
+                                                          
+                                          
+                                  
+                              
+                          </div>
+                          <div class="txt-center">
+                            <?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?>
+                            
+                          </div>
+                      </section>
+                       <?php 
+                            $wp_query = null; 
+                            $wp_query = $temp;  // Reset
+                          ?> 
 </div>
+<?php endif; ?>
 <?php get_footer(); ?>
