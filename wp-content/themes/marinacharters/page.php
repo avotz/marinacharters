@@ -58,6 +58,15 @@ get_header(); ?>
 								<div class="entry-main">
 									
 									<div class="entry-content">
+									<?php if ( has_post_thumbnail() ) :
+
+							  	 	$id = get_post_thumbnail_id($post->ID);
+							  	 	$thumb_url = wp_get_attachment_image_src($id,'full', true);
+							  	 	?>
+							    	
+									<div class="entry-img float-left" style="background-image: url('<?php echo $thumb_url[0] ?>');"></div>
+												
+									<?php endif; ?>
 									<?php the_content();?>	
 									</div>
                                     <?php  wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'meris' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) );?>

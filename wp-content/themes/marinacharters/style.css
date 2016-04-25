@@ -14,6 +14,37 @@
 
 @import url("../meris/style.css");
 
+.float-right,
+.float-left
+{
+    float: none;
+    margin-left: 0;
+    margin-bottom: 5px;
+
+}
+.entry-img{
+    width: 100%;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+@media screen and (min-width: 700px) {
+    .float-left{
+        float: left;
+        margin-right: 2rem;
+    }
+    .float-right
+    {
+        float: right;
+        margin-left: 1rem;
+       
+
+    }
+    .entry-img{
+        width: 450px;
+    }
+}
 .home_widget_portfolio h3 {
 	color: white;
 }
