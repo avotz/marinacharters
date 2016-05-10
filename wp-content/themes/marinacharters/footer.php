@@ -1,4 +1,5 @@
 <!--Footer-->
+		<div class="footer-info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam impedit, assumenda fugit harum dolor fuga corporis similique. </div>
 		<footer>
 			<div class="container text-center">
 				<div class="site-sns">

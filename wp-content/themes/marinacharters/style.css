@@ -300,3 +300,9 @@ footer .site-info
     font-size: 1rem;
 
 }
+.footer-info{
+    background-color: #424446;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
