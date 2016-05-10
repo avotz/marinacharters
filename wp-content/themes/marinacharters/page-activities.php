@@ -16,7 +16,7 @@ get_header(); ?>
               <article class="post-entry text-left">
               
                 <div class="entry-main">
-                  <h1 class="entry-title"><?php the_title(); ?></h1>
+                  <!--<h1 class="entry-title"><?php the_title(); ?></h1>-->
                   <div class="entry-content">
                       <?php if (have_posts()) :?>
                         <?php while ( have_posts() ) : the_post(); ?>
@@ -77,13 +77,31 @@ get_header(); ?>
                                                                         $id = get_post_thumbnail_id($post->ID);
                                                                         $thumb_url = wp_get_attachment_image_src($id,'medium', true);
                                                                         ?>
-                                                                         <a href="<?php the_permalink(); ?>">
+                                                                         <?php  if($post->post_name == "land-adventures") : ?>
+                                                                          <a href="http://www.pexscr.com/adventure-tours-costa-rica/" target="_blank">
+                                                                                  <img src="<?php echo $thumb_url[0] ?>" alt="img">
+                                                                          </a>
+                                                                         
+                                                                          <?php else : ?>      
+                                                                          <a href="<?php the_permalink(); ?>">
                                                                             <img src="<?php echo $thumb_url[0] ?>" alt="img">
-                                                                        </a>           
+                                                                        </a>      
+                                                                          <?php endif ?> 
+                                                                              
                                                                     <?php endif; ?>
+
+                                                                   <?php
+
+                                                                    if($post->post_name == "land-adventures") : ?>
+                                                                    <a href="http://www.pexscr.com/adventure-tours-costa-rica/" target="_blank">
+                                                                           <h3><?php the_title(); ?></h3>
+                                                                    </a> 
+                                                                    
+                                                                    <?php else : ?>      
                                                                     <a href="<?php the_permalink(); ?>">
                                                                            <h3><?php the_title(); ?></h3>
-                                                                    </a>           
+                                                                    </a> 
+                                                                    <?php endif ?>           
                                                                   </div>
                                                                 
                                                               </div>

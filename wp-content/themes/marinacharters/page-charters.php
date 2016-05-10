@@ -17,7 +17,7 @@ get_header(); ?>
               <article class="post-entry text-left">
               
                 <div class="entry-main">
-                  <h1 class="entry-title"><?php the_title(); ?></h1>
+                  <!--<h1 class="entry-title"><?php the_title(); ?></h1>-->
                   <div class="entry-content">
                       <?php if (have_posts()) :?>
                         <?php while ( have_posts() ) : the_post(); ?>
@@ -71,6 +71,9 @@ get_header(); ?>
                                                           <div class="widget home_widget_portfolio">
                                                               <div class="col-sm-6 col-md-12">
                                                                   <div class="portfolio-box text-center">
+                                                                        <?php if($post->ID == 116): ?>
+                                                                        <span class="coming-soon">Coming Soon</span>
+                                                                        <?php endif ?>
                                                                      
                                                                         <?php if ( has_post_thumbnail() ) :
 

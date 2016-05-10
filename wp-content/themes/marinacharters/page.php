@@ -10,6 +10,7 @@ get_header(); ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 <?php if (have_posts()) :?>
+<?php $pageType = get_the_terms($post->id, 'type');	?>
 <?php	while ( have_posts() ) : the_post();
         $meris_sidebar          = get_post_meta( $post->ID, '_meris_layout', true );
 		$meris_sidebar      = $meris_sidebar==""?"right":$meris_sidebar;
@@ -54,20 +55,75 @@ get_header(); ?>
 								<?php meris_get_breadcrumb();?>
 							</div>
                          <article class="post-entry text-left">
-								<h1 class="entry-title"><?php the_title();?></h1>
+								
 								<div class="entry-main">
 									
 									<div class="entry-content">
-									<?php if ( has_post_thumbnail() ) :
+									<?php if($pageType[0]->slug == 'fleet') : ?>
+										<?php $images = rwmb_meta( 'rw_activity_photos', 'type=image&size=full' );
 
-							  	 	$id = get_post_thumbnail_id($post->ID);
-							  	 	$thumb_url = wp_get_attachment_image_src($id,'full', true);
-							  	 	?>
-							    	
-									<div class="entry-img float-left" style="background-image: url('<?php echo $thumb_url[0] ?>');"></div>
-												
-									<?php endif; ?>
-									<?php the_content();?>	
+		                                   if ( $images ) {?>
+		                                   
+		                                   	<div class="banner-page">
+		                                   		<h1 class="entry-title"><?php the_title();?></h1>
+		                                      <div class="cycle-slideshow"
+					                                data-cycle-fx="fade"
+					                                data-cycle-timeout="4000"
+					                                data-cycle-prev="#prevC"
+					                                data-cycle-next="#nextC"
+					                                data-cycle-slides=".slide-fleet"
+
+					                                   >
+		                                           <?php foreach ( $images as $image ){ ?>
+
+		                                               <div class="slide-fleet" style="background-image: url('<?php echo $image['url'] ?>');"></div>
+		                                             
+		                                            
+		                                            <?php } ?>
+
+		                                           
+		                                      </div>
+		                                      <div class="center">
+					                               <a href=# id="prevC"><i class="fa fa-angle-left"></i></a>
+					                               <a href=# id="nextC"><i class="fa fa-angle-right"></i></a>
+					                           </div>
+					                         </div>
+
+		                                  <?php } ?>
+										<?php else: ?>
+										
+                       
+
+											<?php if ( has_post_thumbnail() ) :
+
+									  	 	$id = get_post_thumbnail_id($post->ID);
+									  	 	$thumb_url = wp_get_attachment_image_src($id,'full', true);
+									  	 	?>
+									    	
+											<div class="entry-img float-left" style="background-image: url('<?php echo $thumb_url[0] ?>');"></div>
+														
+											<?php endif; ?>
+										<?php endif;?>
+										<?php if($pageType[0]->slug == 'fleet') : ?>
+										  <div class="content-fleet">
+										  	<div class="content-fleet-item">
+										  		 <h1>Features</h1>
+										  		 <?php the_content();?>
+										  	</div>
+										  	<div class="content-fleet-item">
+										  		<h1>Prices</h1>
+										  		 <?php echo rwmb_meta( 'rw_prices'); ?>
+										  	</div>
+										  	<div class="content-fleet-item">
+										  		<h1>Media</h1>
+										  		<?php echo rwmb_meta( 'rw_video'); ?>
+										  	</div>
+										  </div>
+										 
+										<?php else: ?>
+											<?php the_content();?>
+										<?php endif; ?>
+
 									</div>
                                     <?php  wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'meris' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) );?>
 								</div>
@@ -106,7 +162,6 @@ get_header(); ?>
 		</div>
 		
 <?php endwhile;?>
-<?php $pageType = get_the_terms($post->id, 'type');	?>
 <?php endif;?>
 
 <?php if($pageType[0]->slug == 'fleet') : ?>

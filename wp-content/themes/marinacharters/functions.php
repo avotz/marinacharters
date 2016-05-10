@@ -65,7 +65,23 @@ function marinacharters_register_meta_boxes( $meta_boxes )
                 'std'   => '',
                 'class' => 'custom-class'
                 
-            )
+            ),
+             array(
+                'name'  => 'Prices',
+                'id'    => $prefix . 'prices',
+                'type'  => 'wysiwyg',
+                'std'   => '',
+                'class' => 'prices',
+                'rows' => 6
+                
+                
+            ),
+              // OEMBED
+            array(
+              'name' => 'video',
+              'id'   =>  $prefix. "video",
+              'type' => 'oembed',
+            ),
            
             
           
