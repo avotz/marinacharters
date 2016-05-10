@@ -211,7 +211,9 @@ get_header(); ?>
                                                           <div class="widget home_widget_portfolio">
                                                               <div class="col-sm-6 col-md-12">
                                                                   <div class="portfolio-box text-center">
-                                                                     
+                                                                     	<?php if($post->ID == 116): ?>
+                                                                        	<span class="coming-soon">Coming Soon</span>
+                                                                        <?php endif ?>
                                                                         <?php if ( has_post_thumbnail() ) :
 
                                                                         $id = get_post_thumbnail_id($post->ID);
