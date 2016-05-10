@@ -171,6 +171,10 @@ footer .site-info
     position: relative;
     overflow: hidden;
 }
+.portfolio-box h3{
+    font-size: 16px;
+    margin-top: 5px;
+}
 .portfolio-box .coming-soon{
     background-color: #FEBE16;
     color: white;
