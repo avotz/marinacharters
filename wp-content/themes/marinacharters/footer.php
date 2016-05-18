@@ -1,5 +1,5 @@
 <!--Footer-->
-		<div class="footer-info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam impedit, assumenda fugit harum dolor fuga corporis similique. </div>
+		<div class="footer-info"> Refereal fee available for agencies & concierce  </div>
 		<footer>
 			<div class="container text-center">
 				<div class="site-sns">
