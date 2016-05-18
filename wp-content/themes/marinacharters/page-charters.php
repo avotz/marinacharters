@@ -71,7 +71,7 @@ get_header(); ?>
                                                           <div class="widget home_widget_portfolio">
                                                               <div class="col-sm-6 col-md-12">
                                                                   <div class="portfolio-box text-center">
-                                                                        <?php if($post->ID == 116): ?>
+                                                                        <?php if($post->ID == 116 || $post->ID == 162): ?>
                                                                         <span class="coming-soon">Coming Soon</span>
                                                                         <?php endif ?>
                                                                      
