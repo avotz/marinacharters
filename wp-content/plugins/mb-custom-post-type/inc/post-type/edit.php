@@ -242,6 +242,22 @@ class MB_CPT_Post_Type_Edit extends MB_CPT_Base_Edit
 				'std'  => 1,
 				'desc' => __( 'Can this post type be exported.', 'mb-custom-post-type' ),
 			),
+			array(
+				'name' => __( 'Rewrite', 'mb-custom-post-type' ),
+				'type' => 'heading',
+			),
+			array(
+				'name' => __( 'Rewrite slug', 'mb-custom-post-type' ),
+				'id'   => $args_prefix . 'rewrite_slug',
+				'type' => 'text',
+				'desc' => __( 'Leave empty to use post type as rewrite slug.', 'mb-custom-post-type' ),
+			),
+			array(
+				'name' => __( 'No prepended permalink structure?', 'mb-custom-post-type' ),
+				'id'   => $args_prefix . 'rewrite_no_front',
+				'type' => 'checkbox',
+				'desc' => __( 'Do not prepend the permalink structure with the front base.', 'mb-custom-post-type' ),
+			),
 		);
 
 		// Basic settings
@@ -353,7 +369,10 @@ class MB_CPT_Post_Type_Edit extends MB_CPT_Base_Edit
 		// Add ng-model attribute to all fields
 		foreach ( $fields as $field )
 		{
-			add_filter( 'rwmb_' . $field['id'] . '_html', array( $this, 'modify_field_html' ), 10, 3 );
+			if ( ! empty( $field['id'] ) )
+			{
+				add_filter( 'rwmb_' . $field['id'] . '_html', array( $this, 'modify_field_html' ), 10, 3 );
+			}
 		}
 
 		return $meta_boxes;
