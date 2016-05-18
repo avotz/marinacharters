@@ -306,3 +306,6 @@ footer .site-info
     text-align: center;
     color: white;
 }
+#meris_home_title-3 .module-description{
+    max-width: 316px;
+}
