@@ -239,9 +239,9 @@ footer .site-info
     -o-text-overflow: clip;
     text-overflow: clip;
     white-space: nowrap;
-    background: -webkit-linear-gradient(-90deg, rgb(253,218,134) 0, rgb(225,157,60) 100%), rgb(253, 218, 134);
-    background: -moz-linear-gradient(180deg, rgb(253,218,134) 0, rgb(225,157,60) 100%), rgb(253, 218, 134);
-    background: linear-gradient(180deg, rgb(253,218,134) 0, rgb(225,157,60) 100%), rgb(253, 218, 134);
+    background: -webkit-linear-gradient(-90deg, #F5F0C6 0, #BA8513 100%), rgb(253, 218, 134);
+    background: -moz-linear-gradient(180deg, #F5F0C6 0, #BA8513 100%), rgb(253, 218, 134);
+    background: linear-gradient(180deg, #F5F0C6 0, #BA8513 100%), rgb(253, 218, 134);
     -webkit-background-origin: padding-box;
     background-origin: padding-box;
     -webkit-background-clip: border-box;
