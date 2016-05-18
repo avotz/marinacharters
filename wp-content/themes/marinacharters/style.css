@@ -309,3 +309,6 @@ footer .site-info
 #meris_home_title-3 .module-description{
     max-width: 316px;
 }
+.blog-list{
+    min-height: 460px;
+}
