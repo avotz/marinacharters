@@ -37,7 +37,7 @@ if(is_home()){$wrapper_class = 'homepage header-wrapper';}else{$wrapper_class = 
 					<i class="fa fa-bars fa-2x"></i>
 				</button>
 			
-				<a href="#" class="btn btn-vip">VIP Celebrities</a>
+				<a href="#" class="btn btn-vip">VIP & Celebrities</a>
 				<nav class="site-nav" role="navigation">
 					<?php 
 					 wp_nav_menu(array('theme_location'=>'primary','depth'=>0,'fallback_cb' =>false,'container'=>'','container_class'=>'main-menu','menu_id'=>'menu-main','menu_class'=>'main-nav','link_before' => '<span>', 'link_after' => '</span>','items_wrap'=> '<ul id="%1$s" class="%2$s">%3$s</ul>'));
