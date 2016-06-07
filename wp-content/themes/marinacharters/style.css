@@ -330,3 +330,6 @@ footer .site-info
 .slogan-box h3{
     font-size: 30px
 }
+.site-nav > ul > li a{
+    padding: 0 16px;
+}
