@@ -41,6 +41,7 @@
 }
 .slide-fleet{
     height: 400px;
+    background-position: bottom center;
 }
 @media screen and (min-width: 700px) {
     .float-left{

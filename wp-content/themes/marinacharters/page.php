@@ -74,7 +74,14 @@ get_header(); ?>
 					                                data-cycle-slides=".slide-fleet"
 
 					                                   >
-		                                           <?php foreach ( $images as $image ){ ?>
+
+		                                           <?php 
+													$id = get_post_thumbnail_id($post->ID);
+									  	 			$thumb_url = wp_get_attachment_image_src($id,'full', true); ?>
+ 												  
+ 												  <div class="slide-fleet" style="background-image: url('<?php echo $thumb_url[0] ?>');"></div>
+
+		                                           <?php  foreach ( $images as $image ){ ?>
 
 		                                               <div class="slide-fleet" style="background-image: url('<?php echo $image['url'] ?>');"></div>
 		                                             
@@ -217,7 +224,7 @@ get_header(); ?>
                                                                         <?php if ( has_post_thumbnail() ) :
 
                                                                         $id = get_post_thumbnail_id($post->ID);
-                                                                        $thumb_url = wp_get_attachment_image_src($id,'medium', true);
+                                                                        $thumb_url = wp_get_attachment_image_src($id,[800,600], true);
                                                                         ?>
                                                                          <a href="<?php the_permalink(); ?>">
                                                                             <img src="<?php echo $thumb_url[0] ?>" alt="img">

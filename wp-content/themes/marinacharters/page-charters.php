@@ -71,17 +71,17 @@ get_header(); ?>
                                                           <div class="widget home_widget_portfolio">
                                                               <div class="col-sm-6 col-md-12">
                                                                   <div class="portfolio-box text-center">
-                                                                        <?php if($post->ID == 116 || $post->ID == 162): ?>
+                                                                        <?php if($post->ID == 116): ?>
                                                                         <span class="coming-soon">Coming Soon</span>
                                                                         <?php endif ?>
                                                                      
                                                                         <?php if ( has_post_thumbnail() ) :
 
                                                                         $id = get_post_thumbnail_id($post->ID);
-                                                                        $thumb_url = wp_get_attachment_image_src($id,'medium', true);
+                                                                        $thumb_url = wp_get_attachment_image_src($id,[800,600], true);
                                                                         ?>
                                                                          <a href="<?php the_permalink(); ?>">
-                                                                            <img src="<?php echo $thumb_url[0] ?>" alt="img">
+                                                                            <img src="<?php echo $thumb_url[0] ?>" alt="img" height="600" width="800">
                                                                         </a>           
                                                                     <?php endif; ?>
                                                                     <a href="<?php the_permalink(); ?>">
