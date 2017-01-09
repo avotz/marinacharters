@@ -79,7 +79,7 @@ get_header(); ?>
 													$id = get_post_thumbnail_id($post->ID);
 									  	 			$thumb_url = wp_get_attachment_image_src($id,'full', true); ?>
  												  
- 												  <div class="slide-fleet" style="background-image: url('<?php echo $thumb_url[0] ?>');"></div>
+ 												 <!-- <div class="slide-fleet" style="background-image: url('<?php echo $thumb_url[0] ?>');"></div>-->
 
 		                                           <?php  foreach ( $images as $image ){ ?>
 
