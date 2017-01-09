@@ -78,7 +78,7 @@ get_header(); ?>
                                                                         <?php if ( has_post_thumbnail() ) :
 
                                                                         $id = get_post_thumbnail_id($post->ID);
-                                                                        $thumb_url = wp_get_attachment_image_src($id,[800,600], true);
+                                                                        $thumb_url = wp_get_attachment_image_src($id,'large', true);
                                                                         ?>
                                                                          <a href="<?php the_permalink(); ?>">
                                                                             <img src="<?php echo $thumb_url[0] ?>" alt="img" height="600" width="800">
