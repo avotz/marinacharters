@@ -1,5 +1,5 @@
 <!--Footer-->
-		<div class="footer-info"> Refereal fee available for agencies & concierce  </div>
+		<div class="footer-info"> Refereal fee available for agencies & concierce  <a href="https://www.budget.com/budgetWeb/home/home.ex?HP" class="budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a></div>
 		<footer>
 			<div class="container text-center">
 				<div class="site-sns">

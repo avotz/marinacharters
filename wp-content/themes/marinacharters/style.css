@@ -334,3 +334,9 @@ footer .site-info
 .site-nav > ul > li a{
     padding: 0 16px;
 }
+.budget-logo{
+    background-color: white;
+    width: 200px;
+    display: block;
+    margin: 10px auto 0;
+}
