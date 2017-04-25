@@ -77,16 +77,16 @@ get_header(); ?>
                                                                         $id = get_post_thumbnail_id($post->ID);
                                                                         $thumb_url = wp_get_attachment_image_src($id,'medium', true);
                                                                         ?>
-                                                                         <?php  if($post->post_name == "land-adventures") : ?>
-                                                                          <a href="http://www.pexscr.com/adventure-tours-costa-rica/" target="_blank">
-                                                                                  <img src="<?php echo $thumb_url[0] ?>" alt="img">
-                                                                          </a>
+                                                                         <!-- <?php /* if($post->post_name == "land-adventures") : */?> -->
+                                                                          <!-- <a href="http://www.pexscr.com/adventure-tours-costa-rica/" target="_blank"> -->
+                                                                                  <!-- <img src="<?php /*echo $thumb_url[0] */?>" alt="img"> -->
+                                                                          <!-- </a> -->
                                                                          
-                                                                          <?php else : ?>      
+                                                                          <!-- <?php /*else : */?>       -->
                                                                           <a href="<?php the_permalink(); ?>">
                                                                             <img src="<?php echo $thumb_url[0] ?>" alt="img">
                                                                         </a>      
-                                                                          <?php endif ?> 
+                                                                          <!-- <?php /*endif */?>  -->
                                                                               
                                                                     <?php endif; ?>
 
