@@ -107,7 +107,7 @@ get_header(); ?>
 									  	 	$thumb_url = wp_get_attachment_image_src($id,'full', true);
 									  	 	?>
 									    	
-											<div class="entry-img float-left" style="background-image: url('<?php echo $thumb_url[0] ?>');"></div>
+											<div class="entry-img float-right" style="background-image: url('<?php echo $thumb_url[0] ?>');"></div>
 														
 											<?php endif; ?>
 										<?php endif;?>
