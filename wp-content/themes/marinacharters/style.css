@@ -354,7 +354,7 @@ footer .site-info
 .wpcf7 input[type="submit"]{
     color: #fff;
     background-color: #022642;
-    float: right;
+    /*float: right;*/
     width: 200px;
     border: none;
     font-weight: bold;
