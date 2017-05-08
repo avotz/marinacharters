@@ -341,7 +341,7 @@ footer .site-info
     margin: 10px auto 0;
 }
 .wpcf7 p {
-    margin:; 0;
+    margin: 0;
 }
 .wpcf7 input[type="text"],.wpcf7 input[type="email"], .wpcf7 textarea{
     width: 100%;
@@ -350,4 +350,7 @@ footer .site-info
     border: 1px solid #ccc;
     margin-bottom: 5px;
     border-radius: 2px;
+}
+.wpcf7 textarea{
+    height: 80px;
 }
