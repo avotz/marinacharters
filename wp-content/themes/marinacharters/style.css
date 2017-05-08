@@ -351,6 +351,15 @@ footer .site-info
     margin-bottom: 5px;
     border-radius: 2px;
 }
+.wpcf7 input[type="submit"]{
+    color: #fff;
+    background-color: #022642;
+    float: right;
+    width: 200px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
 .wpcf7 textarea{
     height: 80px;
 }
