@@ -340,3 +340,14 @@ footer .site-info
     display: block;
     margin: 10px auto 0;
 }
+.wpf7 p {
+    margin:; 0;
+}
+.wpf7 input[type="text"],.wpf7 input[type="email"], .wpf7 textarea{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
