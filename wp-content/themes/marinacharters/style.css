@@ -359,6 +359,7 @@ footer .site-info
     border: none;
     font-weight: bold;
     font-size: 18px;
+    padding: 10px;
 }
 .wpcf7 textarea{
     height: 80px;
