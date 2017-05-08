@@ -340,10 +340,10 @@ footer .site-info
     display: block;
     margin: 10px auto 0;
 }
-.wpf7 p {
+.wpcf7 p {
     margin:; 0;
 }
-.wpf7 input[type="text"],.wpf7 input[type="email"], .wpf7 textarea{
+.wpcf7 input[type="text"],.wpcf7 input[type="email"], .wpcf7 textarea{
     width: 100%;
     padding: 10px;
     background-color: #fff;
