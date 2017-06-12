@@ -20,6 +20,9 @@
 .site-nav{
     float: none;
 }
+.header-wrapper header .name-box .site-name, .header-wrapper header .name-box .site-tagline{
+    display: none;
+}
 .float-right,
 .float-left
 {
