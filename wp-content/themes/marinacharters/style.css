@@ -20,6 +20,11 @@
 .site-nav{
     float: none;
 }
+.partners__link{
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+}
 .header-wrapper header .name-box .site-name, .header-wrapper header .name-box .site-tagline{
     display: none;
 }
@@ -339,9 +344,9 @@ footer .site-info
 }
 .budget-logo{
     background-color: white;
-    width: 200px;
+    /*width: 200px;
     display: block;
-    margin: 10px auto 0;
+    margin: 10px auto 0;*/
 }
 .wpcf7 p {
     margin: 0;

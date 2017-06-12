@@ -1,5 +1,12 @@
 <!--Footer-->
-		<div class="footer-info"> Refereal fee available for agencies & concierce  <a href="https://www.budget.com/budgetWeb/home/home.ex?HP" class="budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a></div>
+		<div class="footer-info"> Refereal fee available for agencies & concierce <br>
+		<a href="http://www.pexscr.com/" class="partners__link" target="_blank"><img src="<?php echo get_stylesheet_directory_uri();  ?>/images/partners/PEXS-Costa-Rica-Logo.jpg" alt="pexscr"></a>
+             <a href="http://marinacharterscr.com/" class="partners__link" target="_blank"><img src="<?php echo get_stylesheet_directory_uri();  ?>/images/partners/logo-brokers-white.png" alt="Costa Rica Brokers"></a>
+             <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_stylesheet_directory_uri();  ?>/images/partners/Guanacaste.png" alt="Guanacaste Caturga"></a>
+             <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_stylesheet_directory_uri();  ?>/images/partners/caturga.png" alt="Guanacaste Caturga"></a>
+             <a href="http://www.johansens.com/north-america/costa-rica/" class="partners__link" target="_blank"><img src="<?php echo get_stylesheet_directory_uri();  ?>/images/partners/Jo-Logo.jpg" alt="Johansen"></a>
+             <a href="https://www.budget.co.cr/rental-hermosa-guanacaste/" class="partners__link budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a>
+		</div>
 		<footer>
 			<div class="container text-center">
 				<div class="site-sns">
