@@ -325,7 +325,7 @@ footer .site-info
 
 }
 .footer-info{
-    background-color: #424446;
+    background-color: white; /*#424446*/;
     padding: 1rem;
     text-align: center;
     color: white;
