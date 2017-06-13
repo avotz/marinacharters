@@ -1,7 +1,7 @@
 <!--Footer-->
 		<div class="footer-info"> Refereal fee available for agencies & concierce <br>
 		<a href="http://www.pexscr.com/" class="partners__link" target="_blank"><img src="http://costarica-brokers.com/wp-content/themes/costaricabrokers/img/partners/PEXS-Costa-Rica-Logo.jpg" alt="pexscr"></a>
-             <a href="http://costaricabrokers.com/" class="partners__link" target="_blank"><img src="http://costarica-brokers.com/wp-content/themes/costaricabrokers/img/logo.png" alt="Costa Rica Brokers"></a>
+             <a href="http://costarica-brokers.com/" class="partners__link" target="_blank"><img src="http://costarica-brokers.com/wp-content/themes/costaricabrokers/img/logo.png" alt="Costa Rica Brokers"></a>
              <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_stylesheet_directory_uri();  ?>/images/partners/Guanacaste.png" alt="Guanacaste Caturga"></a>
              <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_stylesheet_directory_uri();  ?>/images/partners/caturga.png" alt="Guanacaste Caturga"></a>
              <a href="http://www.johansens.com/north-america/costa-rica/" class="partners__link" target="_blank"><img src="<?php echo get_stylesheet_directory_uri();  ?>/images/partners/Jo-Logo.jpg" alt="Johansen"></a>
