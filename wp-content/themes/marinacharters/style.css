@@ -228,7 +228,7 @@ footer .site-info
     border: none;
     background-color: #022642;
     color: #fff;
-    width: 130px;
+    max-width: 204px;
     height: 40px;
     font-size: 14px;
     text-transform: uppercase;
@@ -371,4 +371,8 @@ footer .site-info
 }
 .wpcf7 textarea{
     height: 80px;
+}
+.blog-list iframe{
+    width: 100%;
+    max-height: 400px;
 }
