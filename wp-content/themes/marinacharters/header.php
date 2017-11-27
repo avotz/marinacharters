@@ -76,7 +76,7 @@ if(is_home()){$wrapper_class = 'homepage header-wrapper';}else{$wrapper_class = 
 
 			
 
-				<a href="#wpcf7-f212-o1" class="anchor btn btn-vip">Book Here 10% Discount</a>
+				<!-- <a href="#wpcf7-f212-o1" class="anchor btn btn-vip">Book Here 10% Discount</a> -->
 
 				<nav class="site-nav" role="navigation">
 
