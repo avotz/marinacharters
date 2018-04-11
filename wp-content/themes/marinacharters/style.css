@@ -1,378 +1,62 @@
-/*
- Theme Name:   MarinaCharters
- Theme URI:    #
- Description:  MarinaCharters Child Theme
- Author:       Alonso
- Author URI:   http://avotz.com
- Template:     meris
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  MarinaCharters
-*/
-
-@import url("../meris/style.css");
-
-.logo-box{
-    margin-top: 15px;
-}
-.site-nav{
-    float: none;
-}
-.partners__link{
-    display: inline-block;
-    vertical-align: middle;
-    width: 150px;
-}
-.header-wrapper header .name-box .site-name, .header-wrapper header .name-box .site-tagline{
-    display: none;
-}
+@import url("../meris/style.css");.logo-box{margin-top:15px;}
+.site-nav{float:none;}
+.partners__link{display:inline-block;vertical-align:middle;width:150px;}
+.header-wrapper header .name-box .site-name, .header-wrapper header .name-box .site-tagline{display:none;}
 .float-right,
-.float-left
-{
-    float: none;
-    margin-left: 0;
-    margin-bottom: 5px;
-
-}
-.post-entry {
-    padding: 15px 0;
-}
+.float-left{float:none;margin-left:0;margin-bottom:5px;}
+.post-entry{padding:15px 0;}
 .slide-fleet,
-.entry-img{
-    width: 100%;
-    height: 280px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+.entry-img{width:100%;height:280px;background-repeat:no-repeat;background-size:cover;background-position:center center;}
+.slide-fleet{height:400px;background-position:bottom center;}
+@media screen and (min-width:700px){.float-left{float:left;margin-right:2rem;}
+.float-right{float:right;margin-left:1rem;}
+.entry-img{width:450px;}
 }
-.slide-fleet{
-    height: 400px;
-    background-position: bottom center;
-}
-@media screen and (min-width: 700px) {
-    .float-left{
-        float: left;
-        margin-right: 2rem;
-    }
-    .float-right
-    {
-        float: right;
-        margin-left: 1rem;
-       
-
-    }
-    .entry-img{
-        width: 450px;
-    }
-}
-.banner-page{
-    position: relative;
-    margin-bottom: 1rem;
-}
-.banner-page h1{
-    background-color: white;
-    color: #022642;
-    padding: .5rem;
-    display: block;
-    position: absolute;
-    left: 1px;
-    top: 1px;
-    z-index: 9999;
-}
-.banner-page #prevC, .banner-page #nextC{
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    display: block;
-    z-index: 9999;
-    font-size: 2.5rem;
-    color: white;
-}
-.banner-page #prevC{
-    left: 1rem;
-}
-.banner-page #nextC{
-    right: 1rem;
-}
-.home_widget_portfolio h3 {
-	/*color: white;*/
-}
-.homepage-slider .carousel-caption {
-    top: 8%;
-    right: 15%;
-    left: 15%;
-    color: #fff;
-    z-index: 3;
-    text-align: left;
-}
-
-.homepage-slider .carousel-caption button {
-    border: none;
-    background-color: #fed136;
-    color: #fff;
-    width: 220px;
-    height: 50px;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 40px;
-    font-weight: bold;
-    text-align: center; 
-}
-.homepage-slider .carousel-caption a {
-    border: none;
-    background-color: #022642;
-    color: #fff;
-    width: 220px;
-    height: 50px;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-top: 40px;
-    font-weight: bold;
-    padding: 1px 6px;
-    line-height:50px;
-    display: inline-block;
-    text-align: center; 
-    margin-left: 1rem;
-}
-
+.banner-page{position:relative;margin-bottom:1rem;}
+.banner-page h1{background-color:white;color:#022642;padding:.5rem;display:block;position:absolute;left:1px;top:1px;z-index:9999;}
+.banner-page #prevC, .banner-page #nextC{position:absolute;top:50%;transform:translate(0, -50%);display:block;z-index:9999;font-size:2.5rem;color:white;}
+.banner-page #prevC{left:1rem;}
+.banner-page #nextC{right:1rem;}
+.home_widget_portfolio h3{}
+.homepage-slider .carousel-caption{top:8%;right:15%;left:15%;color:#fff;z-index:3;text-align:left;}
+.homepage-slider .carousel-caption button{border:none;background-color:#fed136;color:#fff;width:220px;height:50px;font-size:18px;text-transform:uppercase;margin-top:40px;font-weight:bold;text-align:center;}
+.homepage-slider .carousel-caption a{border:none;background-color:#022642;color:#fff;width:220px;height:50px;font-size:18px;text-transform:uppercase;margin-top:40px;font-weight:bold;padding:1px 6px;line-height:50px;display:inline-block;text-align:center;margin-left:1rem;}
 h1,
 h2,
-h3{
-	margin-top: 0;
-    font-weight: normal;
-}
-.fleet-details{
-    margin-top: -2rem;
-    padding-bottom: 2rem;
-}
-.fleet h3, .activities h3{
-	color: #000;
-}
-.pagination{
-	text-align: center;
-}
-.pagination>h2{
-	display: none;
-}
-.pagination .page-numbers {
-    display: inline-block;
-    background-color: #0d79c8;
-    color: #fff;
-    padding: .8rem;
-    line-height: 18px;
-}
-.pagination .page-numbers.current, .pagination .page-numbers:hover {
-    background-color: #000;
-}
-.txt-center{
-	text-align: center;
-}
-.entry-title{
-	margin-top: 0;
-}
-footer .site-info
-{
-	color: white;
-}
-.portfolio-box{
-    margin-bottom: 1rem;
-    position: relative;
-    overflow: hidden;
-}
-.portfolio-box h3{
-    font-size: 16px;
-    margin-top: 5px;
-}
-.portfolio-box .coming-soon{
-    background-color: #FEBE16;
-    color: white;
-    padding: .5rem;
-    position: absolute;
-    display: block;
-    z-index: 2;
-    top: 20%;
-    left: 78%;
-    transform: translate(-50%,-50%) rotate(35deg);
-    text-transform: uppercase;
-    font-size: .8rem;
-    width: 100%;
-    text-align: center;   
-}
+h3{margin-top:0;font-weight:normal;}
+.fleet-details{margin-top:-2rem;padding-bottom:2rem;}
+.fleet h3, .activities h3{color:#000;}
+.pagination{text-align:center;}
+.pagination>h2{display:none;}
+.pagination .page-numbers{display:inline-block;background-color:#0d79c8;color:#fff;padding:.8rem;line-height:18px;}
+.pagination .page-numbers.current, .pagination .page-numbers:hover{background-color:#000;}
+.txt-center{text-align:center;}
+.entry-title{margin-top:0;}
+footer .site-info{color:white;}
+.portfolio-box{margin-bottom:1rem;position:relative;overflow:hidden;}
+.portfolio-box h3{font-size:16px;margin-top:5px;}
+.portfolio-box .coming-soon{background-color:#FEBE16;color:white;padding:.5rem;position:absolute;display:block;z-index:2;top:20%;left:78%;transform:translate(-50%,-50%) rotate(35deg);text-transform:uppercase;font-size:.8rem;width:100%;text-align:center;}
 .service-box img,
-.portfolio-box img {
-    border: 1px solid transparent;
-    padding: 5px;
-    -webkit-filter: grayscale(0%); 
-    -moz-filter: grayscale(0%); 
-    -ms-filter: grayscale(0%); 
-    -o-filter: grayscale(0%); 
-    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=0);  
-    _filter:none; 
-}
+.portfolio-box img{border:1px solid transparent;padding:5px;-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=0);_filter:none;}
 .service-box img:hover,
-.portfolio-box img:hover {
-    border-color: #fed136;
-    -webkit-filter: grayscale(100%); 
-    -moz-filter: grayscale(100%); 
-    -ms-filter: grayscale(100%); 
-    -o-filter: grayscale(100%); 
-    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);  
-}
-#meris_home_title-3 .module-description{
-    max-width: 220px;
-    margin-top: 55px;
-}
-.btn-vip{
-    border: none;
-    background-color: #022642;
-    color: #fff;
-    max-width: 204px;
-    height: 40px;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-top: 40px;
-    font-weight: bold;
-    padding: 1px 6px;
-    line-height:40px;
-    display: inline-block;
-    text-align: center; 
-    margin-left: 1rem;
-    float: right;
-    margin-top: 10px;
-    margin-right: 15px;
-    /*padding: 3px;
-    
-    font-weight: bold;
-    font-size: 18px;
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    z-index: auto;
-    width: auto;
-    padding: 10px 20px;
-    overflow: visible;
-    border: 0 none rgb(177,106,2);
-    border-bottom: 4px solid rgb(177,106,2);
-    border-radius: 7px 7px 9px 9px;
-    color: rgba(255,255,255,1);
-    text-align: center;
-    text-transform: uppercase;
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    white-space: nowrap;
-    background: -webkit-linear-gradient(-90deg, #F5F0C6 0, #BA8513 100%), rgb(253, 218, 134);
-    background: -moz-linear-gradient(180deg, #F5F0C6 0, #BA8513 100%), rgb(253, 218, 134);
-    background: linear-gradient(180deg, #F5F0C6 0, #BA8513 100%), rgb(253, 218, 134);
-    -webkit-background-origin: padding-box;
-    background-origin: padding-box;
-    -webkit-background-clip: border-box;
-    background-clip: border-box;
-    -webkit-background-size: auto auto;
-    background-size: auto auto;
-    -webkit-box-shadow: 0 -1px 1px 0 rgba(255,255,255,0.701961) inset, 0 1px 1px 0 rgb(177,106,2) ;
-    box-shadow: 0 -1px 1px 0 rgba(255,255,255,0.701961) inset, 0 1px 1px 0 rgb(177,106,2) ;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.498039) ;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -o-transition: none;
-    transition: none;
-    -webkit-transform: none;
-    transform: none;
-    -webkit-transform-origin: 50% 50% 0;
-    transform-origin: 50% 50% 0;*/
-    
-
-}
-.btn-vip:hover{
-    background: #E3A140;
-    color: white;
-}
-.content-fleet
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-}
-
-.content-fleet-item
-{
-    width: 370px;
-    border-right: 1px dashed #e3e3e3;
-    padding: 1rem;
-    
-}
-.content-fleet-item:last-child{
-    border: none;
-}
-.content-fleet-item iframe
-{
-    width: 100%;
-    height: 200px;
-    
-}
-.content-fleet-item h1
-{
-    text-transform: uppercase;
-
-}
-.content-fleet-item h2, .content-fleet-item h3
-{
-    font-size: 1rem;
-
-}
-.footer-info{
-    background-color: white; /*#424446*/;
-    padding: 1rem;
-    text-align: center;
-    color: white;
-}
-#meris_home_title-3 .module-description{
-    max-width: 316px;
-}
-.blog-list{
-    min-height: 460px;
-}
-.slogan-box h3{
-    font-size: 30px
-}
-.site-nav > ul > li a{
-    padding: 0 10px;
-}
-.budget-logo{
-    background-color: white;
-    /*width: 200px;
-    display: block;
-    margin: 10px auto 0;*/
-}
-.wpcf7 p {
-    margin: 0;
-}
-.wpcf7 input[type="text"],.wpcf7 input[type="email"], .wpcf7 textarea{
-    width: 100%;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    margin-bottom: 5px;
-    border-radius: 2px;
-}
-.wpcf7 input[type="submit"]{
-    color: #fff;
-    background-color: #022642;
-    float: right;
-    width: 200px;
-    border: none;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px;
-}
-.wpcf7 textarea{
-    height: 80px;
-}
-.blog-list iframe{
-    width: 100%;
-    max-height: 400px;
-}
+.portfolio-box img:hover{border-color:#fed136;-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);}
+#meris_home_title-3 .module-description{max-width:220px;margin-top:55px;}
+.btn-vip{border:none;background-color:#022642;color:#fff;max-width:204px;height:40px;font-size:14px;text-transform:uppercase;margin-top:40px;font-weight:bold;padding:1px 6px;line-height:40px;display:inline-block;text-align:center;margin-left:1rem;float:right;margin-top:10px;margin-right:15px;}
+.btn-vip:hover{background:#E3A140;color:white;}
+.content-fleet{display:flex;flex-wrap:wrap;justify-content:space-around;}
+.content-fleet-item{width:370px;border-right:1px dashed #e3e3e3;padding:1rem;}
+.content-fleet-item:last-child{border:none;}
+.content-fleet-item iframe{width:100%;height:200px;}
+.content-fleet-item h1{text-transform:uppercase;}
+.content-fleet-item h2, .content-fleet-item h3{font-size:1rem;}
+.footer-info{background-color:white;;padding:1rem;text-align:center;color:white;}
+#meris_home_title-3 .module-description{max-width:316px;}
+.blog-list{min-height:460px;}
+.slogan-box h3{font-size:30px}
+.site-nav > ul > li a{padding:0 10px;}
+.budget-logo{background-color:white;}
+.wpcf7 p{margin:0;}
+.wpcf7 input[type="text"],.wpcf7 input[type="email"], .wpcf7 textarea{width:100%;padding:10px;background-color:#fff;border:1px solid #ccc;margin-bottom:5px;border-radius:2px;}
+.wpcf7 input[type="submit"]{color:#fff;background-color:#022642;float:right;width:200px;border:none;font-weight:bold;font-size:18px;padding:10px;}
+.wpcf7 textarea{height:80px;}
+.blog-list iframe{width:100%;max-height:400px;}
