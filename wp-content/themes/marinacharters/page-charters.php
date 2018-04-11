@@ -67,7 +67,7 @@ get_header(); ?>
 
                                                 ?>
                                             
-                                                      <div class="col-md-3" >
+                                                      <div class="col-md-4" >
                                                           <div class="widget home_widget_portfolio">
                                                               <div class="col-sm-6 col-md-12">
                                                                   <div class="portfolio-box text-center">
