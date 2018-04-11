@@ -81,7 +81,7 @@ get_header(); ?>
                                                                         $thumb_url = wp_get_attachment_image_src($id,array(800,600), true);
                                                                         ?>
                                                                          <a href="<?php the_permalink(); ?>">
-                                                                            <img src="<?php echo $thumb_url[0] ?>" alt="img" height="600" width="800">
+                                                                            <img src="<?php echo $thumb_url[0] ?>" alt="img" height="500" width="800">
                                                                         </a>           
                                                                     <?php endif; ?>
                                                                     <a href="<?php the_permalink(); ?>">
